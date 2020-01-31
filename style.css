@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+ @import url("https://fonts.googleapis.com/css?family=Raleway");
+ 
+ *, *::before, *::after{
+    padding: 0; 
+    margin: 0;
+ }
+ body {
+     font-family: "Raleway";
+     font-size: 1.05vw;
+     font-weight: 400;
+     /* background-color: rgb(24, 11, 11); */
+     width: 100vw;
+     overflow-x: hidden;
+     display: block;
+ }
+ h2, h3, h4, h5 {
+     font-family: Raleway;
+     font-weight: 700;
+ }
+ .header {
+     display: flex;
+     flex-direction: column;
+     background: hsl(59, 80%, 10%) url('https://www.thenational.ae/image/policy:1.710892:1520399313/FILE-PHOTO-People-shop-at-a-street-market-in-Divisoria-Manila.JPG?f=16x9&w=1200&$p$f$w=73cf43d');
+     background-repeat: no-repeat;
+     background-blend-mode: multiply;
+     background-size: cover;
+     height: 85vh;
+     width: 100vw;
+     overflow-x: hidden;
+     margin-bottom: 5vh;
+     border-bottom-left-radius: 20%;
+     box-shadow: 0 7px 9px #3b3937;
+     /* clip-path: polygon(50% 0%, 100% 0, 100% 90%, 75% 100%, 25% 100%, 0 90%, 0 0) */
+ }
+ .top {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+ }
+.logo-container {
+    flex: 2;
+}
+ 
+ #img1 {
+     width: 55%;
+     height: auto;
+     margin-left: 6vw;
+     margin-top: 5vh;
+
+     animation: moveInTop 2.5s ease-out;
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    100%  {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100%  {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100%  {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(270px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100%  {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.nav {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: 800;
+    margin-top: 5vh;
+}
+
+.nav li {
+    padding: 5px;
+    padding-top: 7px;
+    height: 25px;
+    color: #634a33;
+
+    animation: moveInRight 3s ease-out .7s;
+    animation-fill-mode: backwards;
+    transition: all 0.9s;
+    backface-visibility: hidden;
+}
+ 
+ #img2 {
+     margin-top: 15vh;
+     margin-right: 15vw;
+     max-width: 30%;
+     height: auto;
+     flex: 3;
+
+     animation: moveInRight 2.5s ease-out;
+ }
+ .num1 {
+     margin-top: 10vh;
+     margin-left: 20vw;
+     margin-bottom: 4vh;
+     width: 30vw;
+     color: #82bf4c;
+     font-size: 2.5vw;
+
+     animation: moveInLeft 2.5s ease-out;
+     transition: all .9s;
+ }
+
+ .num1:hover, .nav li:hover {
+     transform: scale(1.2);
+     color: white;
+ }
+ .bottom {
+     margin-top: 5vh;
+     display: flex;
+     justify-content: space-around;
+ }
+ .next {
+     flex: 2;
+ }
+ 
+ .payimg {
+     margin-top: 5vh;
+ }
+
+ .section {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     /* background: rgb(253, 251, 251); */
+     width: 100vw;
+ }
+ .section-bottom {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+
+ #myCarousel {
+     margin-top: 10vh;
+     width: 600px;
+     box-shadow: 1px 9px 7px #52504f;
+ }
+ .section-top {
+     width: 100%;
+     margin-top: 20vh;
+     display: flex;
+     justify-content: space-around;
+ }
+ .left-side, .right-side, .center-side {
+     padding: 18px;
+     border-radius: 10px;
+     background: hsl(57, 83%, 5%);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     box-shadow: 0 9px 7px #52504f;
+ }
+ .ngalaba {
+     height: 10vh;
+ }
+ .upText {
+     color: #634a33;
+ }
+ .btn-start {
+     width: 15vw;
+     height: 7vh;
+     border-radius: 0.25vw;
+     background: #ff9e1f;
+     border: 1px solid #ff9e1f;
+     color: #634a33;
+
+     animation: moveInBottom 2.5s ease-out 1.5s;
+     animation-fill-mode: backwards;
+     transition: all .9s;
+ }
+ .btn-start:hover {
+    transform: scale(1.2);
+    background: #9c5c09;
+    color: white;
+ }
+ .text {
+     color: white;
+     font-size: 2.5vw;
+     margin-bottom: 4vh;
+ }
+ .popular {
+     width: 100%;
+     margin-top: 10vh;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     background: whitesmoke;
+ }
+ .states {
+     margin-left: 5vw;
+     align-self: center;
+     font-weight: 600;
+ }
+ .partner {
+     margin-right: 5vw;
+ }
+ .onpos {
+     height: 7vh;
+ }
+ .num2 {
+     margin-top: 15vh;
+     width: 30vw;
+     color: #000;
+ }
+ .num2 strong {
+     color: #82bf4c;
+ }
+ 
+ 
+ .join {
+     margin-left: 20vw;
+     width: 15vw;
+     height: 7vh;
+     border-radius: 0.25vw;
+     background: #ff9e1f;
+     border: 1px solid #ff9e1f;
+     color: #634a33;
+     font-weight: 600;
+
+     animation: moveInBottom 2.5s ease-out .7s;
+     animation-fill-mode: backwards;
+     transition: all .9s;
+ }
+
+ .join:hover, .join2:hover {
+     transform: scale(1.2);
+     background: #9c5c09;
+     color: white;
+ }
+ .footer {
+     background: hsl(57, 83%, 5%);
+     color: white;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     width: 100vw;
+     /* height: 60vh; */
+     margin-top: 5vh;
+     border-top-right-radius: 20%;
+     /* clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%); */
+ }
+ #left-div {
+     margin-top: 20vh;
+     margin-left: 6vw;
+     margin-right: 5vw;
+     width: 20vw;
+ }
+ #right-div {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     margin-top: 20vh;
+     margin-left: 5vw;
+     width: 25vw;
+ }
+ #center-div {
+     display: flex;
+     flex-direction: row;
+     margin-top: 20vh;
+     margin-left: 3vw;
+     justify-items: center;
+     width: 25vw;
+ }
+
+ .footimg1 {
+     max-width: 100%;
+     height: auto;
+     margin-bottom: 6vh;
+ }
+ 
+ .group-icon {
+     margin-bottom: 3vh;
+ }
+ span {
+     color: #634a33;
+     margin-left: 3vw;
+ }
+ hr {
+     margin-top: 20vh;
+     height: 22vh;
+ }
+ .hr2 {
+    margin-left: 2vw;
+ }
+ li {
+     list-style: none;
+     margin-top: 2vh;
+     color: #634a33;
+ }
+ #center-sec {
+     margin-left: 3vw;
+ }
+ #right-sec {
+     margin-left: 3vw;
+ }
+ #last {
+     height: 5.5vh;
+     border-radius: 0.25vw;
+     width: 25vw;
+     border: none;
+ }
+ .join2 {
+     height: 6vh;
+     border-radius: 0.25vw;
+     width: 12.5vw;
+     align-self: right;
+     margin-top: -1vh;
+     margin-bottom: 5vh;
+     background: #82bf4c;
+     border: 1px solid #82bf4c;
+     color: white;
+     transition: all .9s;
+ }
+ .headings {
+     color: hsl(243, 87%, 12%);
+ }
+ p, .para {
+     color: hsl(243, 58%, 33%);
+ }
+ .foothead {
+     color: #82bf4c;
+     font-weight: 900;
+     margin-bottom: 3vh;
+ }
+ #last-p {
+     color: #634a33;
+ }
+ .a1 {
+     margin-bottom: 2vh;
+ }
+ @media screen and (max-width: 520px) {
+    .next1, .next {
+        flex-direction: column;
+        align-items: center;
+    }
+    .next {
+        margin-top: 4vh;
+    }
+    .next1 {
+        margin-left: 7vw;
+        margin-top: 30vh;
+    }
+    .sign1 {
+        margin-right: 7vw;
+        width: 10vw;
+        height: 3vh;
+        font-size: 1.07vh;
+    }
+    .sign2 {
+        margin-right: 10vw;
+        width: 10vw;
+        height: 3vh;
+        font-size: 1.07vh;
+    }
+    #img2 {
+        max-width: 35%;
+    }
+    .num1 {
+        width: 60vw;
+        font-size: 2.5vh;
+        text-align: center;
+    }
+    .get {
+        font-size: 1.07vh;
+        width: 20vw;
+        height: 3vh;
+    }
+    .num2 {
+        margin-top: 5vh;
+        font-size: 2.5vh;
+        width: 50vw;
+        text-align: center;
+    }
+    .left-flex {
+        flex-direction: inherit;
+        margin-top: 5vh;
+        align-items: flex-start;
+    }
+    #img3 {
+        max-width: 55vw;
+        margin: 0 auto;
+        margin-bottom: 3vh;
+    }
+    p {
+        font-size: 2vh;
+    }
+    .a1 {
+        font-size: 2.3vh;
+    }
+    .first-column {
+        margin-bottom: 3vh;
+    }
+    .left-up, .left-down, .right-up, .right-down {
+        width: 80vw;
+        margin-bottom: 3vh;
+    }
+
+    .first-column, .second-column {
+        margin-left: -15vw;
+    }
+    .num3 {
+        font-size: 2.3vh;
+        margin-top: -10vh;
+    }
+    .para {
+        width: 90vw;
+    }
+    .email-button {
+        flex-direction: column;
+    }
+    #first {
+        width: 70vw;
+        margin-bottom: 3vh;
+    }
+    .join {
+        width: 70vw;
+        margin-left: 0;
+    }
+    .footer {
+        flex-direction: column;
+        height: 150vh;
+        align-items: flex-start;
+    }
+    hr {
+        display: none;
+    }
+    
+    #left-div, #center-div, #right-div {
+        width: 80vw;
+        margin-left: 15vw;
+    }
+    .footimg1 {
+        width: 60%;
+        margin-bottom: 3vh;
+    }
+    .group-icon {
+        width: 100%;
+    }
+    span {
+        font-size: 4vw;
+    }
+    #right-div {
+        margin-top: -105vh;
+        align-items: flex-start;
+    }
+    #last-p {
+        text-align: center;
+        margin-bottom: 2vh;
+        width: 60vw;
+    }
+    #center-div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35vh;
+    }
+    #last {
+        margin-bottom: 2vh;
+        min-width: 65vw;
+    }
+    .join2 {
+        min-width: 40vw;
+        align-self: flex-end;
+        margin-right: 14.8vw;
+        margin-bottom: 10vh;
+    }
+    .foothead {
+        font-size: 3.5vw;
+    }
+    #left-sec, #center-sec, #right-sec {
+        margin-bottom: 5vh;
+    }
+    #center-sec, #right-sec {
+        margin-left: 0;
+    }
+    li {
+        font-size: 1.6vh;
+    }
+ } 
